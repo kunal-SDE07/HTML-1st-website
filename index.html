@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <!-- meta stands for meta-data, means data about the data  -->
     <title>My first html website</title>
+    <link href="/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -27,8 +28,8 @@
         Now, about all the other ones, we can have of course, multiple of them.
     -->
 
-    <header>
-      <h1>📘 The Code Magazine</h1>
+    <header class="main-header">
+      <h1>📘 Learn the best way</h1>
 
       <nav>
         <a href="/blog.html">Blog</a>
@@ -47,14 +48,14 @@
         <h2>The Basic Language of the Web: HTML</h2>
 
         <img
-          src="img/laura-jones.jpg"
+          src="img/Author-image.jpg"
           alt="author-image"
-          height="50"
-          width="50"
+          height="100"
+          width="100"
         />
 
-        <p>
-          Posted by <strong> Laura Jones </strong> on Monday, June 21st 2027
+        <p id="author">
+          Posted by <strong> Kunal Lad </strong> on Monday, June 21st 2027
         </p>
 
         <img src="img/post-img.jpg" alt="post-image" width="500" height="200" />
@@ -135,9 +136,9 @@
     -->
 
     <aside>
-      <h3>Challenge #1</h3>
-
-      <ul>
+      <!-- Challenges 1 & 2 -->
+      <h4>Related Post</h4>
+      <ul class="related-blogs">
         <li>
           <img
             src="/img/related-1.jpg"
@@ -146,7 +147,7 @@
             width="75"
           />
           <a href="#">Learn web developement</a>
-          <p>By Nick Jones</p>
+          <p class="related-author">By Nick Jones</p>
         </li>
         <li>
           <img
@@ -156,7 +157,7 @@
             width="75"
           />
           <a href="#">The Unknown Power of CSS</a>
-          <p>By Coder.io</p>
+          <p class="related-author">By Coder.io</p>
         </li>
         <li>
           <img
@@ -166,17 +167,27 @@
             width="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Crio.do</p>
+          <p class="related-author">By Crio.do</p>
         </li>
       </ul>
-    </aside>
-    <aside>
       <h3>
-        <a href="/Challenge2.html">Challenge #2</a>
+        <a href="/Challenge2.html" class="challenge2-link">&#8594;</a>
       </h3>
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magzine</footer>
+    <!-- <div class="table">
+      <ul>
+        <li>Kunal</li>
+        <li>Kajal</li>
+        <li>Matansh</li>
+        <li>Kishan</li>
+        <li>Yash</li>
+      </ul>
+    </div> -->
+
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magzine</p>
+    </footer>
   </body>
 </html>
 
