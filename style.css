@@ -207,10 +207,10 @@ nav a:link:last-child {
   color: #ff0000;
 }
 
-h1::first-letter {
+/* h1::first-letter {
   font-style: normal;
   margin-right: 5px;
-}
+} */
 
 /* JSON Sibling */
 /* h3 + p::first-line {
@@ -234,4 +234,11 @@ h1::first-letter {
   position: absolute;
   right: -20px;
   top: -10px;
+}
+
+.heading .heading-logo,
+.heading h1 {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
 }
