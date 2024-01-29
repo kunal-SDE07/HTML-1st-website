@@ -206,3 +206,32 @@ nav a:link:last-child {
   background-color: transparent;
   color: #ff0000;
 }
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* JSON Sibling */
+/* h3 + p::first-line {
+  color: #ff0000b0;
+} */
+
+/* After & Before Psuedo Selector */
+
+.main-heading-h2 {
+  position: relative;
+}
+
+.main-heading-h2::after {
+  content: "TOP";
+  background-color: #ffe70c;
+  color: #444;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2px 8px;
+  position: absolute;
+  right: -20px;
+  top: -10px;
+}
