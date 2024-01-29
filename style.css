@@ -175,3 +175,15 @@ a -> active
   width: 80%;
   margin: 0 auto;
 }
+
+/* Playing with boxes */
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
