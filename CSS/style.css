@@ -200,7 +200,7 @@ nav a:link:last-child {
   border: 1px solid transparent;
   cursor: pointer;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   right: 50px;
 }
 
@@ -329,4 +329,20 @@ aside {
 
 footer {
   clear: both;
+}
+
+/* Creating a label */
+
+.label {
+  text-align: center;
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.label p {
+  color: black;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
 }
