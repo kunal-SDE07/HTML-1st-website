@@ -10,11 +10,17 @@ body {
   position: relative;
 }
 
+/* Centering page */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .main-header {
   padding: 20px 40px;
   background-color: #f7f7f7;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 nav {
@@ -35,6 +41,9 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 50px 0px;
   width: 500px;
+}
+aside ul {
+  list-style: none;
 }
 
 .post-img {
@@ -69,6 +78,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
@@ -170,13 +180,6 @@ h -> hover
 a -> active
 */
 
-/* Centering page */
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 /* Playing with boxes */
 
 nav a:link {
@@ -241,4 +244,89 @@ nav a:link:last-child {
   display: inline-block;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.heading {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Main section */
+article {
+  width: 65%;
+  float: left;
+}
+
+/* related post */
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+.card {
+  /* width: 60%; */
+  /* background-color: rebeccapurple; */
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+
+.content {
+  float: right;
+  width: 80%;
+}
+
+.content a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  /* margin-top: 10px; */
+}
+
+.content p {
+  font-size: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.related {
+  margin: auto;
+  width: 90%;
+}
+
+footer {
+  clear: both;
 }
